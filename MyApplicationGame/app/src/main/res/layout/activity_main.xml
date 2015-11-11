@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+    <RelativeLayout
+    android:background="#E8EAF6"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <!-- text view for the question -->
+    <TextView
+        android:id="@+id/lblQuestion"
+        android:text=" Country !"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="22sp"
+        android:gravity="center"
+        />
+    <!-- two buttons -> one for true / one for false -->
+    <Button
+        android:id="@+id/btnTrue"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/lblQuestion"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="30dp"
+        android:text="TRUE"
+        android:textSize="24sp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnFalse"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/lblQuestion"
+        android:layout_alignParentRight="true"
+        android:layout_margin="30dp"
+        android:text="False"
+        android:textSize="24sp"
+        android:padding="10dp"/>
+
+    <!-- an ImageView for the picture to go in the middle -->
+
+    <ImageView
+        android:id="@+id/imgPicture"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="#303F9F"
+        android:layout_above="@id/lblQuestion"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"/>
+
+</RelativeLayout>
